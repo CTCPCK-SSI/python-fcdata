@@ -27,7 +27,7 @@ def main():
 	while message != "exit()":
 		message = input(">> ")
 		if message is not None and message != "" and message != "exit()":
-			mm.swith_channel(message)
+			mm.switch_channel(message)
 	
 
 

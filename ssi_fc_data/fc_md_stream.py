@@ -40,7 +40,7 @@ class MarketDataStream(object):
 
       _error_handler(_error)
 
-  def swith_channel(self, channel):
+  def switch_channel(self, channel):
     self.hub_proxy.server.invoke('SwitchChannels', channel)
      
   def start(self, _on_message, _on_error, _selected_channel, *argv):
