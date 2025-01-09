@@ -31,6 +31,13 @@ def md_get_daily_index():
 	print(client.daily_index(config, model.daily_index( '123', 'VN100', '15/10/2020', '15/10/2020', 1, 100, '', '')))
 
 def md_get_stock_price():
+	# This function does not behave properly for data in year 2025
+	# When requested data up to year 2025 it fetch all the corrupted or data
+	# that is not correspond to the stock code. I think this is from the server side
+	# can SSI Corp check again? Propose day: 09/01/2025 10:21:00 GMT+7
+	
+
+	
 	print(client.daily_stock_price(config, model.daily_stock_price ('fpt', '15/10/2020', '15/10/2020', 1, 100, 'hose')))
 
 
